@@ -1,6 +1,6 @@
 # Effective Variance Attention-enhanced Diffusion Model for Crop Field Aerial Image Super Resolution (EVADM)
 
-## Overview
+## Overview 💥
 
 The **Effective Variance Attention-enhanced Diffusion Model (EVADM)** is designed to enhance the resolution and quality of aerial imagery, particularly focusing on high-resolution cropland images. By leveraging emerging diffusion models (DM) and introducing the Variance-Average-Spatial Attention (VASA) mechanism, EVADM significantly improves image super-resolution (SR) tasks.
 <div style="text-align: center;">
@@ -25,17 +25,11 @@ Efficient VASA-enhanced Diffusion Model (EVADM) and the elevated image Variance 
 ### CropSR-FP/OR (for real-SR testing)
 - **Description**: A combined dataset constructed from matched orthomosaic mapping (CropSR-OR) and fixed-point photographs (CropSR-FP).
 - **Total Pairs**: More than 5,000 pairs.
-- The test datasets can be accessed at [CropSR (for Crop Field Aerial Image Super Resolution), Mendeley Data](https://data.mendeley.com/preview/fhvph562cn?a=2477f9a3-b71e-474b-b072-150c85a2a512).
+- The test datasets can be accessed at [CropSR (for Crop Field Aerial Image Super Resolution), Mendeley Data](https://data.mendeley.com/datasets/fhvph562cn).
 
 ## Model Performance
-
-- **FID Reductions**: 
-  - Achieved a reduction of 14.6 for ×2 real SR datasets.
-  - Achieved a reduction of 8.0 for ×4 real SR datasets.
-  
-- **SRFI Improvements**: 
-  - 27% boost for ×2 datasets.
-  - 6% boost for ×4 datasets.
+  - Achieved a FID reduction of 14.6, and 27% boost of SRFI for ×2 real SR datasets.
+  - Achieved a FID reduction of 8.0, and 6% boost of SRFI for ×4 real SR datasets.
 
 ## Generalization Ability
 
