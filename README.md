@@ -49,7 +49,7 @@ EVADM offers a promising approach for realistic aerial imagery super-resolution,
 ## Installation
 
 All models were implemented using Python and the PyTorch framework and trained on an NVIDIA RTX 4090 GPU. The EVADM model is based on the LDM (Rombach et al., 2022), please refer to both [EVADM](https://github.com/HobbitArmy/EVADM/EVADM) and [LDM](https://github.com/CompVis/latent-diffusion) setup instructions.
-
+Download weights to EVADM/weights/ folder from [weights](https://drive.google.com/drive/folders/1os4pK0CfyjW96FphApZpTjBziltEiTyz?usp=drive_link)
 Go under EVADM/ and run for EVADM SR usage demo:
 ```bash
 python eva101_EVADM_infer.py
