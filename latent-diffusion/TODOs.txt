@@ -1,3 +1,0 @@
-1. Arrange code scripts for testing;
-2. Upload the weights file;
-3. Update the test approach documents. 
