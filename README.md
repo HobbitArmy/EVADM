@@ -44,22 +44,23 @@ The model's effectiveness is validated through ablation studies and feature-atte
 EVADM offers a promising approach for realistic aerial imagery super-resolution, showcasing high practicality for various downstream applications in agriculture and beyond.
 
 
-# !! Upcoming 👇
+## 💎 Go to /EVADM/ for demo & code
 
 ## Installation
 
-All models were implemented using Python and the PyTorch framework and trained on an NVIDIA RTX 4090 GPU. The diffusion model is based on the LDM (Rombach et al., 2022), while the regression- and GAN-based models were derived from MMEDIT (MMEditing, 2022). To install the necessary dependencies for the Effective Variance Attention-enhanced Diffusion Model (EVADM), please refer to the [LDM](https://github.com/CompVis/latent-diffusion) setup instructions.
+All models were implemented using Python and the PyTorch framework and trained on an NVIDIA RTX 4090 GPU. The EVADM model is based on the LDM (Rombach et al., 2022), please refer to both [EVADM](https://github.com/HobbitArmy/EVADM/EVADM) and [LDM](https://github.com/CompVis/latent-diffusion) setup instructions.
 
+Go under EVADM/ and run for EVADM SR usage demo:
 ```bash
-pip install -r requirements.txt
+python eva101_EVADM_infer.py
 ```
 
-## Usage
+## SRFI metrics
 
-For testing the EVADM model, execute the following command:
+For calculating the SRFI model, see :
 
 ```bash
-python test.py --model <path_to_trained_model> --img_path <path_to_img>
+eva102_SRFI_metrics.py
 ```
 
 ## License
