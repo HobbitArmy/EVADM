@@ -2,7 +2,7 @@
 
 ## Overview 💥
 
-This is the repo includes tha models, methods and data developed in paper:
+This is the repository includes the models, methods and data developed in paper:
 
 [**Effective variance attention-enhanced diffusion model for crop field aerial image super resolution**](https://doi.org/10.1016/j.isprsjprs.2024.08.017) that published in [**ISPRS Journal of Photogrammetry and Remote Sensing**](https://www.sciencedirect.com/journal/isprs-journal-of-photogrammetry-and-remote-sensing).
 
