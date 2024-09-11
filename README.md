@@ -1,4 +1,4 @@
-# Effective Variance Attention-enhanced Diffusion Model for Crop Field Aerial Image Super Resolution (EVADM)
+# Effective Variance Attention-enhanced Diffusion Model (EVADM) for Crop Field Aerial Image Super Resolution
 
 ## Overview 💥
 
