@@ -7,6 +7,7 @@ This is the repository includes the models, methods and data developed in paper:
 [**Effective variance attention-enhanced diffusion model for crop field aerial image super resolution**](https://doi.org/10.1016/j.isprsjprs.2024.08.017) that published in [**ISPRS Journal of Photogrammetry and Remote Sensing**](https://www.sciencedirect.com/journal/isprs-journal-of-photogrammetry-and-remote-sensing).
 
 ResearchGate: [ResearchGate Article](https://www.researchgate.net/publication/383946370_Effective_variance_attention-enhanced_diffusion_model_for_crop_field_aerial_image_super_resolution)
+
 中文简介：[基于方差注意力和隐扩散模型的无人机图像超分辨率](https://zhuanlan.zhihu.com/p/719676096)
 
 The **Effective Variance Attention-enhanced Diffusion Model (EVADM)** is designed to enhance the resolution and quality of aerial imagery, particularly focusing on high-resolution cropland images. By leveraging emerging diffusion models (DM) and introducing the Variance-Average-Spatial Attention (VASA) mechanism, EVADM significantly improves image super-resolution (SR) tasks.
