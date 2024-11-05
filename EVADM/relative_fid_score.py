@@ -250,8 +250,14 @@ def compute_statistics_of_path(path, model, batch_size, dims, device,
     return m, s
 
 
-def calculate_fid_given_paths(paths, batch_size, device, dims, num_workers=1):
-    """Calculates the FID of two paths"""
+def calculate_rfid_given_paths(paths, batch_size, device, dims, num_workers=1):
+    """ Calculates the relative-FID (rfid)
+        paths: [hr_path, sr_path, up_path]
+        batch_size: batch size to use
+        device: device to use
+        dims: dimensionality of Inception features to use
+        num_workers: number of processes to use for data loading
+    """
     for p in paths:
         if not os.path.exists(p):
             raise RuntimeError('Invalid path: %s' % p)
@@ -269,10 +275,10 @@ def calculate_fid_given_paths(paths, batch_size, device, dims, num_workers=1):
                                         dims, device, num_workers)
     fid_value_sr = calculate_frechet_distance(m0, s0, m1, s1)
     fid_value_up = calculate_frechet_distance(m0, s0, m2, s2)
+    # relative_fid_score
     r_fid_value = 1-(fid_value_sr/fid_value_up)
-    # fid_value = calculate_frechet_distance(m1, s1, m2, s2)
 
-    return fid_value_sr, fid_value_up, r_fid_value, 10**r_fid_value
+    return fid_value_sr, fid_value_up, r_fid_value
 
 
 def save_fid_stats(paths, batch_size, device, dims, num_workers=1):
@@ -320,12 +326,12 @@ def main():
         save_fid_stats(args.path, args.batch_size, device, args.dims, num_workers)
         return
 
-    fid_value = calculate_fid_given_paths(args.path,
+    fid_value = calculate_rfid_given_paths(args.path,
                                           args.batch_size,
                                           device,
                                           args.dims,
                                           num_workers)
-    print('FID: ', fid_value)
+    print('FID_value_sr, FID_value_up, RFID_value: ', fid_value)
 
 
 if __name__ == '__main__':
